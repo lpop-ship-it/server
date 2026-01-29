@@ -1,0 +1,31 @@
+portals:
+  crt:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: mopolicon
+    location: 2711.0,44.0,-111.0:2717.0,51.0,-111.0
+    world: world
+    destination: world_creative
+  svr:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: mopolicon
+    location: 2711.0,43.0,-177.0:2717.0,51.0,-177.0
+    world: world
+    destination: world_mmorpg
+  csportal:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: mopolicon
+    location: 2747.0,44.0,-147.0:2747.0,50.0,-141.0
+    world: world
+    destination: world_cs
