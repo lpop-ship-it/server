@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1769697197953
+  login: 1769694680887
+money: '50000.0'
+last-account-name: mopolicon
+logoutlocation:
+  world: b0e92882-b5ab-4a02-b58d-24801411e164
+  world-name: world
+  x: 2697.954229668305
+  y: 89.36583572219106
+  z: -151.06596597079667
+  yaw: 16.29498291015625
+  pitch: 28.747207641601562
+lastlocation:
+  world: 067b9d0c-9ddf-476a-99a2-780b4c98a06e
+  world-name: world_creative
+  x: -48.0
+  y: 68.0
+  z: -32.0
+  yaw: 0.0
+  pitch: 0.0

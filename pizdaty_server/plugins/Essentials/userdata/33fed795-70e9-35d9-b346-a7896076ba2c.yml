@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 26.67.121.6
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1769693818253
+  login: 1769694073191
+money: '1000'
+last-account-name: lalad
+logoutlocation:
+  world: b0e92882-b5ab-4a02-b58d-24801411e164
+  world-name: world
+  x: 2736.330000244015
+  y: 73.17752858099439
+  z: -208.07056527657235
+  yaw: 75.66581726074219
+  pitch: 48.1459846496582
