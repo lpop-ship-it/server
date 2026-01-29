@@ -1,0 +1,106 @@
+plugins {
+    id 'java'
+
+    //Paperweight userdev - Access to Mojang mapped Minecraft classes
+    //Documentation: https://docs.papermc.io/paper/dev/userdev
+    id("io.papermc.paperweight.userdev") version "1.7.0"
+
+    //Minecrell plugin-yml - Automated generation of plugin.yml
+    //Documentation: https://github.com/Minecrell/plugin-yml
+    id 'net.minecrell.plugin-yml.paper' version '0.6.0'
+}
+
+//Change these
+//Plugin name can be changed in settings.gradle
+group = 'me.developer'
+version = '1.0-SNAPSHOT'
+
+//paper-plugin.yml configuration -See https://github.com/Minecrell/plugin-yml
+paper {
+    //Main information
+    main = 'me.developer.paperplugin.PaperPlugin'
+    apiVersion = '1.20'
+    version = project.version
+    load = 'STARTUP' // or 'POSTWORLD'
+    foliaSupported = true
+    prefix = 'PaperPlugin'
+
+    //Plugin description
+    name = project.name
+    description = 'This is a paper plugin template.'
+    website = 'https://paperplugin.developer.me'
+    author = 'developer'
+
+    //Dependencies - See https://docs.papermc.io/paper/dev/getting-started/paper-plugins#dependency-declaration
+
+    /*serverDependencies {
+        'Plugin' {
+            load = 'BEFORE' // or 'AFTER' or 'OMIT'
+            required = false
+            joinClasspath = false
+        }
+    }*/
+
+    //Commands are not required to be defined here. Register using the server command map.
+
+    //Permissions
+
+    /*permissions {
+        'paperplugin.*' {
+            children = ['paperplugin.test'] // Defaults permissions to true
+            // You can also specify the values of the permissions
+            childrenMap = ['paperplugin.test': false]
+        }
+        'paperplugin.test' {
+            description = 'Allows you to do something.'
+            setDefault('OP') // 'TRUE', 'FALSE', 'OP' or 'NOT_OP'
+        }
+    }*/
+
+    //Experimental / optional features - See https://docs.papermc.io/paper/dev/getting-started/paper-plugins
+
+    //bootstrapper = 'me.developer.paperplugin.PaperPluginBootstrap'
+    //loader = 'me.developer.paperplugin.PaperPluginLoader'
+
+    /*bootstrapDependencies {
+        'Plugin' {
+            load = 'AFTER'
+            required = false
+            joinClasspath = false
+        }
+    }*/
+
+
+}
+
+//Build jar with obfuscated minecraft references automatically.
+tasks.assemble {
+    dependsOn(reobfJar)
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //Add Paper development bundle. Gives access to Paper api and server as dependencies.
+    paperweight.paperDevBundle("1.20.4-R0.1-SNAPSHOT")
+}
+
+def targetJavaVersion = 17
+java {
+    def javaVersion = JavaVersion.toVersion(targetJavaVersion)
+    sourceCompatibility = javaVersion
+    targetCompatibility = javaVersion
+    if (JavaVersion.current() < javaVersion) {
+        toolchain.languageVersion = JavaLanguageVersion.of(targetJavaVersion)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    if (targetJavaVersion >= 10 || JavaVersion.current().isJava10Compatible()) {
+        options.release.set(targetJavaVersion)
+    }
+}
+
+

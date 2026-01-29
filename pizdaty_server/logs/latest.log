@@ -1,19 +1,19 @@
-[16:51:01] [ServerMain/INFO]: Building unoptimized datafixer
-[16:51:02] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[16:51:04] [ServerMain/INFO]: Loaded 7 recipes
-[16:51:04] [Server thread/INFO]: Starting minecraft server version 1.19.2
-[16:51:04] [Server thread/INFO]: Loading properties
-[16:51:04] [Server thread/INFO]: This server is running Paper version git-Paper-307 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 476ef25)
-[16:51:04] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[16:51:04] [Server thread/INFO]: Using 4 threads for Netty based IO
-[16:51:05] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 3 worker threads, and gen parallelism of 3 threads
-[16:51:05] [Server thread/INFO]: Default game type: SURVIVAL
-[16:51:05] [Server thread/INFO]: Generating keypair
-[16:51:05] [Server thread/INFO]: Starting Minecraft server on *:25565
-[16:51:05] [Server thread/INFO]: Using default channel type
-[16:51:05] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[16:51:05] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[16:51:05] [Server thread/ERROR]: Could not load 'plugins\worldedit-mod-7.2.12-1.19.2-fabric-forge.jar' in folder 'plugins'
+[18:52:26] [ServerMain/INFO]: Building unoptimized datafixer
+[18:52:30] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[18:52:38] [ServerMain/INFO]: Loaded 7 recipes
+[18:52:43] [Server thread/INFO]: Starting minecraft server version 1.19.2
+[18:52:43] [Server thread/INFO]: Loading properties
+[18:52:43] [Server thread/INFO]: This server is running Paper version git-Paper-307 (MC: 1.19.2) (Implementing API version 1.19.2-R0.1-SNAPSHOT) (Git: 476ef25)
+[18:52:43] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:52:43] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:52:44] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and gen parallelism of 2 threads
+[18:52:45] [Server thread/INFO]: Default game type: SURVIVAL
+[18:52:45] [Server thread/INFO]: Generating keypair
+[18:52:45] [Server thread/INFO]: Starting Minecraft server on *:25565
+[18:52:45] [Server thread/INFO]: Using default channel type
+[18:52:45] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[18:52:45] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[18:52:46] [Server thread/ERROR]: Could not load 'plugins\worldedit-mod-7.2.12-1.19.2-fabric-forge.jar' in folder 'plugins'
 org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
 	at org.bukkit.plugin.java.JavaPluginLoader.getPluginDescription(JavaPluginLoader.java:178) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:155) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
@@ -21,43 +21,43 @@ org.bukkit.plugin.InvalidDescriptionException: Invalid plugin.yml
 	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.19.2.jar:git-Paper-307]
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.19.2.jar:git-Paper-307]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1474) ~[?:?]
 Caused by: java.io.FileNotFoundException: Jar does not contain plugin.yml
 	... 7 more
-[16:51:05] [Server thread/ERROR]: Could not load 'plugins\ExecutableItems-7.26.1.25.jar' in folder 'plugins'
+[18:52:48] [Server thread/ERROR]: Could not load 'plugins\ExecutableItems-7.26.1.25.jar' in folder 'plugins'
 org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins: [SCore]. Please download and install these plugins to run 'ExecutableItems'.
 	at org.bukkit.plugin.SimplePluginManager.loadPlugins(SimplePluginManager.java:287) ~[paper-api-1.19.2-R0.1-SNAPSHOT.jar:?]
 	at org.bukkit.craftbukkit.v1_19_R1.CraftServer.loadPlugins(CraftServer.java:423) ~[paper-1.19.2.jar:git-Paper-307]
 	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.19.2.jar:git-Paper-307]
 	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1100) ~[paper-1.19.2.jar:git-Paper-307]
 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:305) ~[paper-1.19.2.jar:git-Paper-307]
-	at java.lang.Thread.run(Thread.java:840) ~[?:?]
-[16:51:06] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.5.17
-[16:51:06] [Server thread/INFO]: [LuckPerms] Loading configuration...
-[16:51:06] [Server thread/INFO]: [Vault] Loading Vault v1.5.2
-[16:51:06] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v4.3.15-SNAPSHOT
-[16:51:06] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.2.18+6616-abda4e0
-[16:51:06] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@5948787]
-[16:51:06] [Server thread/INFO]: [Multiverse-Portals] Loading Multiverse-Portals v4.3.0-SNAPSHOT
-[16:51:06] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.7
-[16:51:06] [Server thread/INFO]: [GriefPrevention] Loading GriefPrevention v16.18.3
-[16:51:06] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[16:51:06] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.17
-[16:51:07] [Server thread/INFO]:         __    
-[16:51:07] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.17
-[16:51:07] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
-[16:51:07] [Server thread/INFO]: 
-[16:51:07] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
-[16:51:07] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
-[16:51:07] [Server thread/INFO]: [LuckPerms] Performing initial data load...
-[16:51:07] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1135ms)
-[16:51:07] [Server thread/INFO]: [Vault] Enabling Vault v1.5.2
-[16:51:07] [Server thread/INFO]: [Vault] Internal economy registered without depending on Vault.jar
-[16:51:07] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
-[16:51:07] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.18+6616-abda4e0
-[16:51:07] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[16:51:08] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
-[16:51:08] [Server thread/WARN]: 
+	at java.lang.Thread.run(Thread.java:1474) ~[?:?]
+[18:52:48] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.5.17
+[18:52:50] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[18:52:50] [Server thread/INFO]: [Vault] Loading Vault v1.5.2
+[18:52:50] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v4.3.15-SNAPSHOT
+[18:52:50] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v7.2.18+6616-abda4e0
+[18:52:52] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@3270f73c]
+[18:52:52] [Server thread/INFO]: [Multiverse-Portals] Loading Multiverse-Portals v4.3.0-SNAPSHOT
+[18:52:52] [Server thread/INFO]: [Essentials] Loading Essentials v2.19.7
+[18:52:52] [Server thread/INFO]: [GriefPrevention] Loading GriefPrevention v16.18.3
+[18:52:52] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:52:52] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.17
+[18:52:54] [Server thread/INFO]:         __    
+[18:52:54] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.17
+[18:52:54] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[18:52:54] [Server thread/INFO]: 
+[18:52:54] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[18:52:56] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[18:52:56] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[18:52:56] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 4572ms)
+[18:52:56] [Server thread/INFO]: [Vault] Enabling Vault v1.5.2
+[18:52:57] [Server thread/INFO]: [Vault] Internal economy registered without depending on Vault.jar
+[18:52:57] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[18:52:57] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.18+6616-abda4e0
+[18:52:57] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[18:52:57] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[18:52:59] [Server thread/WARN]: 
 **********************************************
 ** This WorldEdit version does not fully support your version of Bukkit.
 **
@@ -68,65 +68,55 @@ org.bukkit.plugin.UnknownDependencyException: Unknown/missing dependency plugins
 ** Please see https://worldedit.enginehub.org/en/latest/faq/#bukkit-adapters
 **********************************************
 
-[16:51:08] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[16:51:08] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[16:51:08] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[16:51:08] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[16:51:08] [Server thread/INFO]: Preparing level "world"
-[16:51:08] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[16:51:09] [Server thread/INFO]: Time elapsed: 112 ms
-[16:51:09] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[16:51:09] [Server thread/INFO]: Time elapsed: 19 ms
-[16:51:09] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[16:51:09] [Server thread/INFO]: Time elapsed: 22 ms
-[16:51:09] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.15-SNAPSHOT
-[16:51:09] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.15-SNAPSHOT" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
-[16:51:09] [Server thread/INFO]: [Multiverse-Core] ßaWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
-[16:51:09] [Server thread/INFO]: Preparing start region for dimension minecraft:world_minigames
-[16:51:09] [Server thread/INFO]: Time elapsed: 16 ms
-[16:51:09] [Server thread/INFO]: Preparing start region for dimension minecraft:world_cs
-[16:51:09] [Server thread/INFO]: Time elapsed: 18 ms
-[16:51:09] [Server thread/INFO]: Preparing start region for dimension minecraft:world_creative
-[16:51:09] [Server thread/INFO]: Time elapsed: 34 ms
-[16:51:09] [Server thread/INFO]: Preparing start region for dimension minecraft:world_mmorpg
-[16:51:09] [Server thread/INFO]: Time elapsed: 48 ms
-[16:51:09] [Server thread/INFO]: [Multiverse-Core] 7 - World(s) loaded.
-[16:51:09] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
-[16:51:09] [Server thread/INFO]: [Multiverse-Core] Version 4.3.15-SNAPSHOT (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
-[16:51:09] [Server thread/INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v4.3.0-SNAPSHOT
-[16:51:09] [Server thread/INFO]: [Multiverse-Portals] 3 - Portals(s) loaded
-[16:51:10] [Server thread/INFO]: [Multiverse-Portals] Found WorldEdit. Using it for selections.
-[16:51:10] [Server thread/INFO]: [Multiverse-Portals 4.3.0-SNAPSHOT]  Enabled - By Rigby and fernferret
-[16:51:10] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.7
-[16:51:10] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
-[16:51:10] [Server thread/INFO]: [Essentials] No kits found to migrate.
-[16:51:10] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
-[16:51:10] [Server thread/INFO]: [Essentials] Using locale ru_RU
-[16:51:10] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
-[16:51:10] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
-[16:51:10] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
-[16:51:10] [Server thread/INFO]: [GriefPrevention] Enabling GriefPrevention v16.18.3
-[16:51:10] [Server thread/INFO]: [GriefPrevention] Finished loading configuration.
-[16:51:10] [Server thread/INFO]: [GriefPrevention] 0 total claims loaded.
-[16:51:10] [Server thread/INFO]: [GriefPrevention] Customizable messages loaded.
-[16:51:10] [Server thread/INFO]: [GriefPrevention] Finished loading data (File Mode).
-[16:51:10] [Server thread/INFO]: [GriefPrevention] Boot finished.
-[16:51:10] [Server thread/INFO]: Running delayed init tasks
-[16:51:10] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.5.2)!
-[16:51:10] [Server thread/INFO]: Done (6.138s)! For help, type "help"
-[16:51:10] [Server thread/INFO]: Timings Reset
-[16:51:10] [Craft Scheduler Thread - 1 - Essentials/INFO]: [Essentials] œÓÎÛ˜ÂÌËÂ ËÌÙÓÏ‡ˆËË Ó ‚ÂÒËË...
-[16:51:11] [Craft Scheduler Thread - 3 - Vault/INFO]: [Vault] [UpdateCheck Debug] Raw Local: '1.5.2' | Norm Local: '1.5.2'
-[16:51:11] [Craft Scheduler Thread - 3 - Vault/INFO]: [Vault] [UpdateCheck Debug] Raw Remote: 'v1.5.2' | Norm Remote: '1.5.2'
-[16:51:12] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] ƒÎˇ ÒÍ‡˜Ë‚‡ÌËˇ ‰ÓÒÚÛÔÌ‡ ÌÓ‚‡ˇ ‚ÂÒËˇ EssentialsX: 2.21.2.
-[16:51:12] [Craft Scheduler Thread - 1 - Essentials/WARN]: [Essentials] —Í‡˜‡ÈÚÂ Â∏ ÓÚÒ˛‰‡: https://essentialsx.net/downloads.html?branch=stable
-[16:51:20] [User Authenticator #0/INFO]: UUID of player mopolicon is fdbbc534-034a-374f-b69b-bbb6f427e0f5
-[16:51:20] [Server thread/INFO]: mopolicon joined the game
-[16:51:20] [Server thread/INFO]: mopolicon[/127.0.0.1:59536] logged in with entity id 750 at ([world]2694.6595891608836, 42.0, -50.41250796840681)
-[16:51:25] [Server thread/ERROR]: No TreeType mapping for TreeGenerator.TreeType.CHERRY
-[16:51:39] [Server thread/INFO]: mopolicon issued server command: //set stone
-[17:02:40] [Server thread/INFO]: mopolicon issued server command: //set stone
-[17:21:11] [Craft Scheduler Thread - 42 - Vault/INFO]: [Vault] [UpdateCheck Debug] Raw Local: '1.5.2' | Norm Local: '1.5.2'
-[17:21:11] [Craft Scheduler Thread - 42 - Vault/INFO]: [Vault] [UpdateCheck Debug] Raw Remote: 'v1.5.2' | Norm Remote: '1.5.2'
-[17:33:17] [Server thread/INFO]: mopolicon lost connection: Disconnected
-[17:33:17] [Server thread/INFO]: mopolicon left the game
+[18:53:00] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[18:53:00] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[18:53:00] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[18:53:00] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[18:53:00] [Server thread/INFO]: Preparing level "world"
+[18:53:02] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[18:53:02] [Server thread/INFO]: Time elapsed: 452 ms
+[18:53:02] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[18:53:02] [Server thread/INFO]: Time elapsed: 120 ms
+[18:53:02] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[18:53:02] [Server thread/INFO]: Time elapsed: 79 ms
+[18:53:02] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v4.3.15-SNAPSHOT
+[18:53:02] [Server thread/WARN]: [Multiverse-Core] "Multiverse-Core v4.3.15-SNAPSHOT" has registered a listener for org.bukkit.event.entity.EntityCreatePortalEvent on method "public void com.onarandombox.MultiverseCore.listeners.MVPortalListener.entityPortalCreate(org.bukkit.event.entity.EntityCreatePortalEvent)", but the event is Deprecated. "Server performance will be affected"; please notify the authors [dumptruckman, Rigby, fernferret, lithium3141, main--].
+[18:53:02] [Server thread/INFO]: [Multiverse-Core] ¬ßaWe are aware of the warning about the deprecated event. There is no alternative that allows us to do what we need to do and performance impact is negligible. It is safe to ignore.
+[18:53:04] [Server thread/INFO]: Preparing start region for dimension minecraft:world_minigames
+[18:53:05] [Server thread/INFO]: Time elapsed: 250 ms
+[18:53:06] [Server thread/INFO]: Preparing start region for dimension minecraft:world_cs
+[18:53:06] [Server thread/INFO]: Time elapsed: 163 ms
+[18:53:06] [Server thread/INFO]: Preparing start region for dimension minecraft:world_creative
+[18:53:07] [Server thread/INFO]: Time elapsed: 64 ms
+[18:53:08] [Server thread/INFO]: Preparing start region for dimension minecraft:world_mmorpg
+[18:53:08] [Server thread/INFO]: Time elapsed: 163 ms
+[18:53:08] [Server thread/INFO]: [Multiverse-Core] 7 - World(s) loaded.
+[18:53:08] [Server thread/WARN]: [Multiverse-Core] Buscript failed to load! The script command will be disabled! If you would like not to see this message, use `/mv conf enablebuscript false` to disable Buscript from loading.
+[18:53:08] [Server thread/INFO]: [Multiverse-Core] Version 4.3.15-SNAPSHOT (API v24) Enabled - By dumptruckman, Rigby, fernferret, lithium3141 and main--
+[18:53:08] [Server thread/INFO]: [Multiverse-Portals] Enabling Multiverse-Portals v4.3.0-SNAPSHOT
+[18:53:08] [Server thread/INFO]: [Multiverse-Portals] 3 - Portals(s) loaded
+[18:53:08] [Server thread/INFO]: [Multiverse-Portals] Found WorldEdit. Using it for selections.
+[18:53:08] [Server thread/INFO]: [Multiverse-Portals 4.3.0-SNAPSHOT]  Enabled - By Rigby and fernferret
+[18:53:08] [Server thread/INFO]: [Essentials] Enabling Essentials v2.19.7
+[18:53:10] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[18:53:10] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[18:53:11] [Server thread/INFO]: [Essentials] Loaded 38132 items from items.json.
+[18:53:11] [Server thread/INFO]: [Essentials] Using locale ru_RU
+[18:53:11] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[18:53:11] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[18:53:11] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[18:53:11] [Server thread/INFO]: [GriefPrevention] Enabling GriefPrevention v16.18.3
+[18:53:12] [Server thread/INFO]: [GriefPrevention] Finished loading configuration.
+[18:53:12] [Server thread/INFO]: [GriefPrevention] 0 total claims loaded.
+[18:53:12] [Server thread/INFO]: [GriefPrevention] Customizable messages loaded.
+[18:53:12] [Server thread/INFO]: [GriefPrevention] Finished loading data (File Mode).
+[18:53:13] [Server thread/INFO]: [GriefPrevention] Boot finished.
+[18:53:14] [Server thread/INFO]: Running delayed init tasks
+[18:53:14] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.5.2)!
+[18:53:14] [Server thread/INFO]: Done (31.244s)! For help, type "help"
+[18:53:14] [Server thread/INFO]: Timings Reset
+[18:53:14] [Craft Scheduler Thread - 6 - Essentials/INFO]: [Essentials] –ü–æ–ª—É—á–µ–Ω–∏–µ –∏–Ω—Ñ–æ—Ä–º–∞—Ü–∏–∏ –æ –≤–µ—Ä—Å–∏–∏...
+[18:53:15] [Craft Scheduler Thread - 9 - Vault/INFO]: [Vault] [UpdateCheck Debug] Raw Local: '1.5.2' | Norm Local: '1.5.2'
+[18:53:15] [Craft Scheduler Thread - 9 - Vault/INFO]: [Vault] [UpdateCheck Debug] Raw Remote: 'v1.5.2' | Norm Remote: '1.5.2'
+[18:53:16] [Craft Scheduler Thread - 6 - Essentials/WARN]: [Essentials] –î–ª—è —Å–∫–∞—á–∏–≤–∞–Ω–∏—è –¥–æ—Å—Ç—É–ø–Ω–∞ –Ω–æ–≤–∞—è –≤–µ—Ä—Å–∏—è EssentialsX: 2.21.2.
+[18:53:16] [Craft Scheduler Thread - 6 - Essentials/WARN]: [Essentials] –°–∫–∞—á–∞–π—Ç–µ –µ—ë –æ—Ç—Å—é–¥–∞: https://essentialsx.net/downloads.html?branch=stable
